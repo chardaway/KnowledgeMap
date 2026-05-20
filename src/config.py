@@ -28,6 +28,12 @@ def get_vault_path() -> Path:
     return p
 
 
+def get_vault_name() -> str:
+    """返回 vault 名称（用于 Obsidian CLI vault= 参数）。"""
+    cfg = load_config()
+    return cfg.get("vault_name", "")
+
+
 def get_output_folder() -> str:
     """返回输出文件夹名称（默认 '认知地图'）。"""
     cfg = load_config()
