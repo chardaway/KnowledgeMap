@@ -16,3 +16,4 @@ jobs:
           python-version: '3.13'
       - run: pip install pre-commit
       - run: pre-commit run --all-files
+      - run: python -m unittest discover -s tests -v
