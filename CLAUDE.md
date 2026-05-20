@@ -19,7 +19,14 @@
 - 代码命名使用英文
 - 遵循所选用技术栈的社区惯例
 
+## 分支策略
+- `master` — 稳定分支，受保护（禁止 force push / 删除）
+- `dev` — 开发分支，日常开发在此进行
+- 功能分支从 `dev` 拉出，完成后 PR 合入 `dev`
+- `dev` 稳定后 PR 合入 `master`
+
 ## 工作流
 - 所有变更需经 git 追踪
 - 自动备份在后台运行，手动提交也应频繁进行
-- 重大决策记录在 `docs/adr/` 中（如启用该目录）
+- 提交前 pre-commit hooks 自动运行（trim whitespace, check YAML/JSON, detect private keys 等）
+- 重大决策记录在 `docs/adr/` 中
