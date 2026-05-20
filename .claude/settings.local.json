@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git --version)",
+      "Bash(gh --version)",
+      "Bash(git config *)",
+      "Bash(gh auth *)",
+      "Bash(git init *)",
+      "Bash(echo \"# 认知地图 \\(Knowledge Map\\)\")",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(gh repo *)",
+      "Bash(git push *)",
+      "Bash(mkdir -p /d/KnowledgeMap/src /d/KnowledgeMap/docs/adr /d/KnowledgeMap/tests /d/KnowledgeMap/skills)",
+      "Bash(touch /d/KnowledgeMap/src/.gitkeep /d/KnowledgeMap/docs/.gitkeep /d/KnowledgeMap/docs/adr/.gitkeep /d/KnowledgeMap/tests/.gitkeep /d/KnowledgeMap/skills/.gitkeep)"
+    ]
+  }
+}
